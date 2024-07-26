@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de juros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="calculadora">
+        <div class="titulo_calculadora">
+            <h1>%% Calculadora de juros %%</h1>
+        </div>
+        <div class="entradas">
+            <div class="valor_entrada">
+                <label>Digite um valor:</label>
+                <input type="text" id="valorEntrada"/>
+            </div>
+            <div class="porcentagem_entrada">
+                <label>Digite o numero da porcentagem:</label>
+                <input type="text" id="porcentagemEntrada"/>
+            </div>
+            <div class="btns">
+                <button onclick="calcular()">Calcular</button>
+                <button onclick="apagar()">Novo</button>
+            </div>
+        </div>
+        <div class="saida">
+            <div class="titulo_saida">
+                <h1>Resultados</h1>
+            </div>
+            <div class="paragrafos_saida" id="div_porcentagem">
+                <p>Porcentagem atrbuída: </p>
+                <p>Valor com juros: </p>
+            </div>
+        </div>
+    </section>
+<script src="app.js"></script>
+</body>
+</html>
